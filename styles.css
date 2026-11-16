@@ -352,3 +352,10 @@ body { margin: 0; }
 /* tombol Sync & Settings di header */
 .hbtns { display: flex; gap: 8px; align-items: center; }
 .iconbtn[aria-current="page"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent-soft); }
+@media (min-width: 960px) {
+  /* laptop: tombol Sync & Settings di ujung kanan header */
+  .top .brand { display: contents; }
+  .top .brand h1 { order: 1; }
+  .top .levels { order: 2; }
+  .top .hbtns { order: 3; margin-left: auto; }
+}

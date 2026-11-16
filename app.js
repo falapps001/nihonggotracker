@@ -1,6 +1,6 @@
-import * as Sync from './sync.js?v=1.0.2';
+import * as Sync from './sync.js?v=1.0.3';
 
-const VERSION = '1.0.2';
+const VERSION = '1.0.3';
 
 /* ---------- utils ---------- */
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'];
