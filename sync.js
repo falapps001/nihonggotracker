@@ -8,7 +8,7 @@
 // Setiap tulisan diberi `srv` (waktu server), sehingga perangkat lain cukup menarik
 // catatan yang berubah sejak tarikan terakhir. Hemat kuota baca.
 
-import { firebaseConfig } from './firebase-config.js';
+import { firebaseConfig } from './firebase-config.js?v=1.0.2';
 
 const CDN = 'https://www.gstatic.com/firebasejs/10.12.2';
 let fb = null, auth = null, db = null, current = null, hooks = null;

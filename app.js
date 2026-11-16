@@ -1,6 +1,6 @@
-import * as Sync from './sync.js';
+import * as Sync from './sync.js?v=1.0.2';
 
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 
 /* ---------- utils ---------- */
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'];
@@ -486,4 +486,4 @@ Sync.init({
     devices = null; save(); render();
   },
 });
-if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).catch(() => {});

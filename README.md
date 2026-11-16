@@ -40,4 +40,4 @@ Settings → **Backup (JSON)** sebulan sekali, lalu simpan file-nya di Google Dr
 | `firestore.rules` | Aturan keamanan: setiap akun hanya bisa membaca datanya sendiri |
 | `sw.js`, `manifest.webmanifest`, `icons/` | Supaya bisa di-install dan dipakai offline |
 
-Setiap kali kode diubah, naikkan `CACHE` di `sw.js` (misalnya `nt-v1.0.1`) supaya perangkat mengambil versi baru.
+Setiap kali kode diubah, naikkan nomor versi di semua tempat (`VERSION` di `app.js`, `CACHE` di `sw.js`, dan `?v=` di `index.html`, `app.js`, `sync.js`) supaya perangkat langsung mengambil versi baru.
