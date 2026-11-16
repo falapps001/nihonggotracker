@@ -1,6 +1,6 @@
 import * as Sync from './sync.js';
 
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 /* ---------- utils ---------- */
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'];
@@ -332,7 +332,7 @@ function render() {
   const lv = document.getElementById('levels');
   lv.innerHTML = LEVELS.map(L => `<button class="chip" data-level="${L}" aria-pressed="${ui.level === L}">${L}</button>`).join('');
   lv.hidden = ui.tab === 'settings';
-  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.tab === ui.tab ? 'page' : 'false'));
+  document.querySelectorAll('#tabs button, header [data-tab]').forEach(b => b.setAttribute('aria-current', b.dataset.tab === ui.tab ? 'page' : 'false'));
   const v = document.getElementById('view');
   const keepAuth = ui.tab === 'settings' && document.getElementById('a-email') ? [document.getElementById('a-email').value, document.getElementById('a-pw').value] : null;
   v.innerHTML = { today: viewToday, materi: viewMateri, riwayat: viewRiwayat, settings: viewSettings }[ui.tab]();
