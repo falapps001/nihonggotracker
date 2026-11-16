@@ -1,11 +1,10 @@
-// Ganti dengan konfigurasi dari Firebase Console:
-// Project settings → General → Your apps → Web app → SDK setup and configuration → Config.
+// Konfigurasi project Firebase (Project settings → Your apps → Web app).
 // Nilai ini bukan rahasia. Keamanan data diatur oleh Firestore rules (lihat firestore.rules).
 export const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  projectId: 'YOUR_PROJECT',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'AIzaSyCor1gUIcsYEky4xAu4w7BLz-M9N1CaRBQ',
+  authDomain: 'nihonggotracker.firebaseapp.com',
+  projectId: 'nihonggotracker',
+  storageBucket: 'nihonggotracker.firebasestorage.app',
+  messagingSenderId: '350041981470',
+  appId: '1:350041981470:web:fe830343179c753381640f',
 };
